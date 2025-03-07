@@ -10,6 +10,51 @@
     <script defer src="src/js/particles-config.js"></script>
     <script defer src="src/js/script.js"></script>
     <script defer src="src/js/lang.js"></script>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+        .logo {
+            max-width: 300px;
+            margin: 20px auto;
+        }
+        .cta-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #0099ff, #7f00ff);
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <div id="particles-js"></div>
@@ -34,11 +79,10 @@
     </header>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1 data-lang="welcome">Welcome to AI4Flow</h1>
-            <p data-lang="description">Innovative AI solutions for a smarter future.</p>
-            <a href="#services" class="cta-btn" data-lang="cta">Try AI Now!</a>
-        </div>
+        <img src="src/assets/logo.png" alt="AI4Flow Logo" class="logo">
+        <h1 data-lang="welcome">Welcome to AI4Flow</h1>
+        <p data-lang="description">Innovative AI solutions for a smarter future.</p>
+        <a href="#services" class="cta-btn" data-lang="cta">Try AI Now!</a>
     </section>
 
     <section id="about" class="section">
