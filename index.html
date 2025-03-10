@@ -3,107 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI4Flow - Intelligent AI Solutions</title>
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/animations.css">
-    <script defer src="src/libs/particles.min.js"></script>
-    <script defer src="src/js/particles-config.js"></script>
-    <script defer src="src/js/script.js"></script>
-    <script defer src="src/js/lang.js"></script>
+    <title>AI4Flow - Inteligentna Optymalizacja Treści</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
     <style>
         body {
-            background-color: black;
-            color: white;
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #1e1e2e, #3a3a5e);
+            color: white;
             text-align: center;
         }
-        #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100vh;
-            top: 0;
-            left: 0;
-            z-index: -1;
+        header {
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .cta-button {
+            background: #ff6b6b;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .cta-button:hover {
+            background: #ff3b3b;
+            transform: scale(1.05);
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
             padding: 20px;
         }
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 80vh;
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            transition: 0.3s;
         }
-        .logo {
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+        .ebook input {
+            padding: 10px;
+            margin-top: 10px;
+            width: 80%;
             max-width: 300px;
-            margin: 20px auto;
         }
-        .cta-btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background: linear-gradient(45deg, #0099ff, #7f00ff);
+        .subscribe-button {
+            background: #4caf50;
             color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
             border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .subscribe-button:hover {
+            background: #45a049;
+        }
+        #chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        #chatbot:hover {
+            background: #0056b3;
         }
     </style>
 </head>
 <body>
-    <div id="particles-js"></div>
-    
     <header>
-        <div class="container">
-            <img src="src/assets/logo.png" alt="AI4Flow Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#" data-lang="home">Home</a></li>
-                    <li><a href="#about" data-lang="about">About</a></li>
-                    <li><a href="#services" data-lang="services">Services</a></li>
-                    <li><a href="#contact" data-lang="contact">Contact</a></li>
-                </ul>
-            </nav>
-            <select id="language-selector">
-                <option value="en">EN</option>
-                <option value="pl">PL</option>
-                <option value="de">DE</option>
-            </select>
-        </div>
+        <h1>Optymalizuj, Automatyzuj, Skaluj – AI4Flow dla Twojego Biznesu!</h1>
+        <p>Wykorzystaj AI do zwiększenia skuteczności Twojej strategii marketingowej.</p>
+        <button class="cta-button">Dowiedz się więcej</button>
     </header>
-
-    <section class="hero">
-        <img src="src/assets/logo.png" alt="AI4Flow Logo" class="logo">
-        <h1 data-lang="welcome">Welcome to AI4Flow</h1>
-        <p data-lang="description">Innovative AI solutions for a smarter future.</p>
-        <a href="#services" class="cta-btn" data-lang="cta">Try AI Now!</a>
-    </section>
-
-    <section id="about" class="section">
-        <h2 data-lang="about-title">About Us</h2>
-        <p data-lang="about-text">AI4Flow is a leading AI-driven company focusing on deep learning and automation.</p>
-    </section>
-
-    <section id="services" class="section">
-        <h2 data-lang="services-title">Our Services</h2>
-        <div class="service-box">
-            <h3 data-lang="service1">AI Development</h3>
-            <p data-lang="service1-desc">Custom AI solutions tailored to your needs.</p>
-        </div>
-        <div class="service-box">
-            <h3 data-lang="service2">Automation</h3>
-            <p data-lang="service2-desc">Streamline processes with intelligent automation.</p>
+    
+    <section class="features">
+        <h2>Najważniejsze Funkcjonalności</h2>
+        <div class="grid-container">
+            <div class="feature-card">📊 Analiza Trendów</div>
+            <div class="feature-card">🛠 Optymalizacja Treści</div>
+            <div class="feature-card">📅 Automatyczne Planowanie</div>
+            <div class="feature-card">📈 Zaawansowana Analityka</div>
         </div>
     </section>
-
+    
+    <section class="testimonials">
+        <h2>Co Mówią Nasi Klienci?</h2>
+        <blockquote>"AI4Flow pomogło nam zwiększyć zasięg o 200%!" – Jan Kowalski, CEO XYZ</blockquote>
+    </section>
+    
+    <section class="ebook">
+        <h2>Odbierz Darmowy E-Book</h2>
+        <p>Zapisz się do newslettera i otrzymaj ekskluzywny poradnik!</p>
+        <input type="email" placeholder="Twój email">
+        <button class="subscribe-button">Pobierz</button>
+    </section>
+    
     <footer>
-        <p>&copy; 2025 AI4Flow. All rights reserved.</p>
+        <p>&copy; 2025 AI4Flow. Wszystkie prawa zastrzeżone.</p>
     </footer>
+    
+    <div id="chatbot">💬</div>
+    
+    <script>
+        document.getElementById("chatbot").addEventListener("click", function() {
+            alert("Chatbot AI4Flow wkrótce dostępny! 😊");
+        });
+    </script>
 </body>
 </html>
