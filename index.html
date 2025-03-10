@@ -1,128 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI4Flow - Inteligentna Optymalizacja Treści</title>
+    <title>AI4Flow - Optymalizuj, Automatyzuj, Skaluj</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #1e1e2e, #3a3a5e);
-            color: white;
-            text-align: center;
-        }
-        header {
-            padding: 50px;
-            background: rgba(0, 0, 0, 0.7);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .cta-button {
-            background: #ff6b6b;
-            color: white;
-            padding: 15px 25px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .cta-button:hover {
-            background: #ff3b3b;
-            transform: scale(1.05);
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-        .feature-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-        .feature-card:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-5px);
-        }
-        .ebook input {
-            padding: 10px;
-            margin-top: 10px;
-            width: 80%;
-            max-width: 300px;
-        }
-        .subscribe-button {
-            background: #4caf50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .subscribe-button:hover {
-            background: #45a049;
-        }
-        #chatbot {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #007bff;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-        #chatbot:hover {
-            background: #0056b3;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>Optymalizuj, Automatyzuj, Skaluj – AI4Flow dla Twojego Biznesu!</h1>
-        <p>Wykorzystaj AI do zwiększenia skuteczności Twojej strategii marketingowej.</p>
-        <button class="cta-button">Dowiedz się więcej</button>
+        <div class="logo">AI4Flow</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="about.html">O nas</a></li>
+                <li><a href="services.html">Usługi</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
     </header>
     
-    <section class="features">
-        <h2>Najważniejsze Funkcjonalności</h2>
-        <div class="grid-container">
-            <div class="feature-card">📊 Analiza Trendów</div>
-            <div class="feature-card">🛠 Optymalizacja Treści</div>
-            <div class="feature-card">📅 Automatyczne Planowanie</div>
-            <div class="feature-card">📈 Zaawansowana Analityka</div>
+    <section class="hero">
+        <canvas id="particles-js"></canvas>
+        <div class="hero-text">
+            <h1>Optymalizuj, Automatyzuj, Skaluj</h1>
+            <p>AI4Flow dla Twojego Biznesu!</p>
+            <a href="#cta" class="btn">Dowiedz się więcej!</a>
         </div>
     </section>
     
-    <section class="testimonials">
-        <h2>Co Mówią Nasi Klienci?</h2>
-        <blockquote>"AI4Flow pomogło nam zwiększyć zasięg o 200%!" – Jan Kowalski, CEO XYZ</blockquote>
+    <section class="benefits">
+        <h2>Korzyści AI4Flow</h2>
+        <ul>
+            <li>Automatyczna analiza danych</li>
+            <li>Predykcja trendów</li>
+            <li>Oszczędność czasu i zasobów</li>
+        </ul>
     </section>
     
-    <section class="ebook">
-        <h2>Odbierz Darmowy E-Book</h2>
-        <p>Zapisz się do newslettera i otrzymaj ekskluzywny poradnik!</p>
-        <input type="email" placeholder="Twój email">
-        <button class="subscribe-button">Pobierz</button>
+    <section class="cta" id="cta">
+        <h2>Chcesz wiedzieć więcej?</h2>
+        <p>Skontaktuj się z nami, aby poznać pełne możliwości AI4Flow.</p>
+        <a href="contact.html" class="btn">Kontakt</a>
     </section>
     
     <footer>
-        <p>&copy; 2025 AI4Flow. Wszystkie prawa zastrzeżone.</p>
+        <p>&copy; 2025 AI4Flow. Wszelkie prawa zastrzeżone.</p>
     </footer>
     
-    <div id="chatbot">💬</div>
-    
-    <script>
-        document.getElementById("chatbot").addEventListener("click", function() {
-            alert("Chatbot AI4Flow wkrótce dostępny! 😊");
-        });
-    </script>
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
