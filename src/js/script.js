@@ -1,8 +1,8 @@
-console.log("Particles.js script loaded.");
-document.addEventListener("DOMContentLoaded", function () {
-    if (window.particlesJS) {
-        console.log("Particles.js is available.");
-    } else {
-        console.error("Particles.js is not loaded!");
-    }
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Strona załadowana!");
+
+    // Obsługa CTA
+    document.querySelector(".cta-button").addEventListener("click", function() {
+        alert("Dziękujemy za zainteresowanie! Skontaktujemy się wkrótce.");
+    });
 });
