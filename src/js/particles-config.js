@@ -9,5 +9,13 @@ particlesJS("particles-js", {
             enable: true,
             speed: 1.5
         }
+    },
+    interactivity: {
+        events: {
+            onhover: {
+                enable: true,
+                mode: "repulse"
+            }
+        }
     }
 });
